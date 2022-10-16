@@ -26,7 +26,7 @@ export const App = () => {
           setIsLoaded(false);
           return toastMessage();
         } else {
-          setItems([...data]);
+          setItems(prevState => [...prevState, ...data]);
           setIsLoaded(false);
         }
       } catch (error) {
