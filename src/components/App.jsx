@@ -14,7 +14,6 @@ export const App = () => {
   const [items, setItems] = useState([]);
   const [largeImage, setLargeImage] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
-  const [showModal, setshowModal] = useState(false);
 
   useEffect(() => {
     if (!query) return;
